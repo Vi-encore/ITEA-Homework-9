@@ -28,24 +28,19 @@
     border-radius: 10px;
     background-color: transparent;
     color: $lightgrey;
-
   }
 
   &__link--main {
     background-color: $orange;
-    color: $white
+    color: $white;
   }
-
-  
-
-  
 
   &__link:hover {
     color: $orange;
   }
   &__link--main:hover {
     background-color: $orange;
-    color: $white
+    color: $white;
   }
 
   &__link:focus {
@@ -56,7 +51,7 @@
 
   @media screen and (max-width: $xl) {
     &__link {
-        font-size: $fs-ss;
+      font-size: $fs-ss;
     }
   }
 
@@ -75,10 +70,11 @@
   }
 
   @media screen and (max-width: $sm) {
-    margin-top: $mp-3;
+    margin-top: 0;
   }
 
   &__header {
     font-size: $fs-m;
   }
+
 }
