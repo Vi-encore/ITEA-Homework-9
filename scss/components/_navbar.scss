@@ -1,0 +1,40 @@
+.header {
+  &__logo {
+    font-family: $logo-font;
+    font-size: $fs-xl;
+  }
+
+  &__span {
+    color: $orange;
+  }
+
+  &__link {
+    color: $darkgrey-bg;
+    font-size: $fs-xs;
+  }
+
+  &__link:hover {
+    color: $orange;
+  }
+
+  &__btn {
+    @include border(2px, $darkgrey-bg);
+    border-radius: 10px;
+    @include transition;
+  }
+
+  &__btn:hover {
+    @include border(3px, $orange);
+    @include box-shadow;
+  }
+
+  @media screen and (max-width: $md) {
+    &__logo {
+      font-size: $fs-m;
+    }
+
+    &__link {
+      font-size: $fs-xxs;
+    }
+  }
+}

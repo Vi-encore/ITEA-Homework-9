@@ -1,0 +1,46 @@
+.heropage {
+    &__header {
+        font-size: $fs-xxl;
+    }
+
+    &__info {
+        color: $lightgrey
+    }
+
+    &__btn {
+        @include btn($fs-s, $orange, $white);
+        @include transition;
+    }
+
+    &__btn:hover {
+        @include btn-hover($white, $orange);
+        @include border(2px, $orange);
+        @include box-shadow;
+    }
+
+    @media screen and (max-width: $lg) {
+        &__header {
+            font-size: $fs-xl;
+        }
+
+        &__btn {
+            font-size: $fs-xs;
+        }
+    }
+
+     @media screen and (max-width: $sm) {
+        &__header {
+            font-size: $fs-l;
+        }
+
+        &__info {
+            font-size: $fs-xxs;
+        }
+
+        &__btn {
+            font-size: $fs-xxs;
+        }
+    }
+
+    
+}

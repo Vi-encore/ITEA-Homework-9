@@ -1,0 +1,66 @@
+.blog {
+  @extend .portfolio;
+  background-color: $primary-color;
+
+  &__hook {
+    @extend .portfolio__hook;
+  }
+
+  &__header {
+    @extend .portfolio__header;
+  }
+
+
+
+  @media screen and (max-width: $md) {
+    &__cards {
+      flex-direction: column !important;
+      margin-top: 2rem;
+      margin-bottom: 2em;
+    }
+  }
+}
+
+.card {
+  color: $lightgrey;
+
+    &__title {
+        color: $darkgrey;
+        font-weight: $fw-500;
+    }
+
+  &__text {
+    font-size: $fs-xs;
+  }
+
+  &__add {
+    font-size: $fs-xxxs;
+    font-family: $logo-font;
+  }
+
+  &__add--1::before {
+    content: $timer;
+    vertical-align: middle;
+  }
+
+  &__add--2::before {
+    content: $person;
+    vertical-align: middle;
+  }
+
+  &__add--3::before {
+    content: $message;
+    vertical-align: middle;
+  }
+
+  &__btn {
+    @extend .heropage__btn;
+    border: 0;
+  }
+
+  @media screen and (max-width: $lg) {
+    &__text {
+      font-size: $fs-xxs;
+    }
+  }
+}

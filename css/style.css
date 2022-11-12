@@ -1,0 +1,214 @@
+/*colors*/
+/*custom-margin/padding*/
+/*font-weight*/
+/*font-size*/
+/*breakpoints*/
+/*before-after*/
+* {
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+  color: #18191A;
+}
+
+.header {
+  background-color: #fff7f4;
+}
+
+.header__logo {
+  font-family: "Work Sans";
+  font-size: 39.06px;
+}
+.header__span {
+  color: #FF5300;
+}
+.header__link {
+  color: #18191A;
+  font-size: 16px;
+}
+.header__link:hover {
+  color: #FF5300;
+}
+.header__btn {
+  border: 2px solid #18191A;
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+.header__btn:hover {
+  border: 3px solid #FF5300;
+  box-shadow: 4px 4px 25px rgba(122, 122, 122, 0.3);
+}
+@media screen and (max-width: 768px) {
+  .header__logo {
+    font-size: 25px;
+  }
+  .header__link {
+    font-size: 12.8px;
+  }
+}
+
+.heropage__header {
+  font-size: 48px;
+}
+.heropage__info {
+  color: #7B7B7B;
+}
+.heropage__btn, .card__btn {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  background-color: #FF5300;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+.heropage__btn:hover, .card__btn:hover {
+  background-color: #FFFFFF;
+  color: #FF5300;
+  font-weight: 800;
+  border: 2px solid #FF5300;
+  box-shadow: 4px 4px 25px rgba(122, 122, 122, 0.3);
+}
+@media screen and (max-width: 992px) {
+  .heropage__header {
+    font-size: 39.06px;
+  }
+  .heropage__btn, .card__btn {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .heropage__header {
+    font-size: 31.25px;
+  }
+  .heropage__info {
+    font-size: 12.8px;
+  }
+  .heropage__btn, .card__btn {
+    font-size: 12.8px;
+  }
+}
+
+.portfolio, .blog {
+  padding-top: 8em;
+}
+.portfolio__info {
+  text-transform: capitalize;
+}
+.portfolio__hook, .blog__hook {
+  color: #FF5300;
+}
+.portfolio__header, .blog__header {
+  font-size: 39.06px;
+}
+.portfolio__hook::before, .blog__hook::before, .portfolio__hook::after, .blog__hook::after {
+  content: "cvx";
+  color: transparent;
+  text-decoration: underline;
+  text-decoration-color: #FF5300;
+}
+.portfolio__link {
+  font-size: 20px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #7B7B7B;
+}
+.portfolio__link--main {
+  background-color: #FF5300;
+  color: #FFFFFF;
+}
+.portfolio__link:hover {
+  color: #FF5300;
+}
+.portfolio__link--main:hover {
+  background-color: #FF5300;
+  color: #FFFFFF;
+}
+.portfolio__link:focus {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  background-color: #FF5300;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 4px 4px 25px rgba(122, 122, 122, 0.3);
+}
+@media screen and (max-width: 1200px) {
+  .portfolio__link {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .portfolio__header, .blog__header {
+    font-size: 31.25px;
+  }
+  .portfolio__hook, .blog__hook {
+    font-size: 12.8px;
+  }
+  .portfolio__link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .portfolio, .blog {
+    margin-top: 3.75em;
+  }
+}
+.portfolio__header, .blog__header {
+  font-size: 25px;
+}
+
+.blog {
+  background-color: #fff7f4;
+}
+@media screen and (max-width: 768px) {
+  .blog__cards {
+    flex-direction: column !important;
+    margin-top: 2rem;
+    margin-bottom: 2em;
+  }
+}
+
+.card {
+  color: #7B7B7B;
+}
+.card__title {
+  color: #373737;
+  font-weight: 500;
+}
+.card__text {
+  font-size: 16px;
+}
+.card__add {
+  font-size: 10.6px;
+  font-family: "Work Sans";
+}
+.card__add--1::before {
+  content: url(../img/timer.png);
+  vertical-align: middle;
+}
+.card__add--2::before {
+  content: url(../img/person.png);
+  vertical-align: middle;
+}
+.card__add--3::before {
+  content: url(../img/message-circle.png);
+  vertical-align: middle;
+}
+.card__btn {
+  border: 0;
+}
+@media screen and (max-width: 992px) {
+  .card__text {
+    font-size: 12.8px;
+  }
+}/*# sourceMappingURL=style.css.map */

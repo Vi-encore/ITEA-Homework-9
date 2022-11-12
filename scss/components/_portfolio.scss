@@ -1,0 +1,84 @@
+.portfolio {
+  padding-top: $mp-8;
+
+  &__info {
+    text-transform: capitalize;
+  }
+
+  &__hook {
+    color: $orange;
+  }
+
+  &__header {
+    font-size: $fs-xl;
+  }
+
+  &__hook::before,
+  &__hook::after {
+    content: $underline;
+    color: transparent;
+    text-decoration: underline;
+    text-decoration-color: $orange;
+  }
+
+  &__link {
+    font-size: $fs-s;
+    font-weight: $fw-500;
+    border: 0;
+    border-radius: 10px;
+    background-color: transparent;
+    color: $lightgrey;
+
+  }
+
+  &__link--main {
+    background-color: $orange;
+    color: $white
+  }
+
+  
+
+  
+
+  &__link:hover {
+    color: $orange;
+  }
+  &__link--main:hover {
+    background-color: $orange;
+    color: $white
+  }
+
+  &__link:focus {
+    @include btn($fs-s, $orange, $white);
+    border: 0;
+    @include box-shadow;
+  }
+
+  @media screen and (max-width: $xl) {
+    &__link {
+        font-size: $fs-ss;
+    }
+  }
+
+  @media screen and (max-width: $lg) {
+    &__header {
+      font-size: $fs-l;
+    }
+
+    &__hook {
+      font-size: $fs-xxs;
+    }
+
+    &__link {
+      font-size: $fs-xs;
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    margin-top: $mp-3;
+  }
+
+  &__header {
+    font-size: $fs-m;
+  }
+}

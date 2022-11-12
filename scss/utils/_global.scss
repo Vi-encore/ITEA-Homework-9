@@ -1,0 +1,10 @@
+* {
+  font-family: $primary-font;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: $white;
+    color: $darkgrey-bg;
+}
